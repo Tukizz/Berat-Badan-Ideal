@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Berat Badan Ideal</title>
+
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/icon.css">
 </head>
@@ -113,14 +115,14 @@
 	            		<div class="card-content white-text">
 	             <!--  <span class="card-title">asdad</span> -->
 	              			<div class="row">
-				    			<form class="col s12" method="post">
+				    			<form method="post">
 				      				<div class="row">
-				        				<div class="input-field col s6 m6">
+				        				<div class="input-field col s12 m6">
 				          					<i class="material-icons prefix">account_circle</i>
 				          					<input id="icon_prefix" type="text" name="nama" class="validate">
 				          					<label for="icon_prefix white-text">Nama</label>
 				        				</div>
-				        				<div class="input-field col s6 m6">
+				        				<div class="input-field col s12 m6">
 				        					<i class="material-icons prefix">wc</i>
 						    				<select class="icons" name="jk">
 						      					<option value="" disabled selected>Jenis Kelamin</option>
@@ -130,13 +132,13 @@
 										</div>
 				      				</div>
 
-				      				<div class="row s12">
-				      					<div class="input-field col s6 m6">
+				      				<div class="row">
+				      					<div class="input-field col s12 m6">
 				          					<i class="material-icons prefix">accessibility</i>
 				          					<input id="icon_telephone" type="text" name="tinggi" class="validate">
 				          					<label for="icon_telephone white-text">Tinggi Badan</label>
 				        				</div>
-				        				<div class="input-field col s6 m6">
+				        				<div class="input-field col s12 m6">
 				          					<i class="material-icons prefix">poll</i>
 				          					<input id="icon_telephone" type="text" name="berat" class="validate">
 				          					<label for="icon_telephone white-text">Berat Badan</label>
