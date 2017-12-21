@@ -33,8 +33,8 @@
    }
    /* invalid color */
    .input-field input[type=text].invalid {
-     border-bottom: 1px solid #ffffff !important;
-     box-shadow: 0 1px 0 0 #ffffff !important;
+     border-bottom: 1px solid #f44336 !important;
+     box-shadow: 0 1px 0 0 #f44336 !important;
    }
    /* icon prefix focus color */
    .input-field .prefix.active {
