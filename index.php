@@ -60,6 +60,9 @@
 	        	<div class="col s12 m12">
 	          		<div class="card teal">
 	            		<div class="card-content white-text">
+	              			<?php if(empty($nama or $jk or $tinggi or $berat)){
+	            					echo strtoupper("<strong><h4>Cek Kembali Formnya<h4></strong>");
+	            				  }else{?>
 	              			<h4>Hai <?php echo strtoupper($nama);?></h4>
 	              			<h5>Hitungan 
 
@@ -71,19 +74,38 @@
 							      	Berat Badan Ideal anda adalah
 								<?php } 
 							    	else if($jk == "w"){
-							    	$bbideal = ($tinggi-100)-(15/100*($tinggi-100)); 
+							    		$bbideal = ($tinggi-100)-(15/100*($tinggi-100)); 
 							    ?>
 							      	Berat Badan Ideal anda Adalah
-								<?php } 
-							    	else if(!empty($jk)){?>
-							      		Cek kembali Formnya
-							    <?php } ?>
+								<?php } ?>
 							</h5>	
 							<h4>
 								<b>
-									Tinggi Badan anda : <?php echo $tinggi;?> CM<br>
-									Berat Badan anda : <?php echo $berat;?> KG<br>
-									Berat Badan Ideal anda : <?php echo $bbideal;?> KG<br>
+										
+										<?php if(empty($bbideal))
+												{
+													echo strtoupper("<strong><h4>Cek Kembali Formnya<h4></strong>");
+												}
+										else
+											{?>
+												Tinggi Badan anda : <?php echo $tinggi;?> CM<br>
+												Berat Badan anda : <?php echo $berat;?> KG<br>
+												Berat Badan Ideal anda : <?php echo $bbideal;?> KG<br>
+										<?php 
+												if($berat < $bbideal)
+												{
+													echo "Anda Kurang Ideal";
+												}
+												else if($berat > $bbideal)
+												{
+													echo "Anda Idealnya Kelebihan";
+												}
+												else
+												{
+													echo "Berat Badan Anda Ideal";
+												}
+											}
+										}?>
 								</b>
 							</h4>  
         				</div>
