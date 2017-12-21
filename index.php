@@ -119,12 +119,12 @@
 				      				<div class="row">
 				        				<div class="input-field col s12 m6">
 				          					<i class="material-icons prefix">account_circle</i>
-				          					<input id="icon_prefix" type="text" name="nama" class="validate">
+				          					<input id="icon_prefix" type="text" name="nama" class="validate" required>
 				          					<label for="icon_prefix white-text">Nama</label>
 				        				</div>
 				        				<div class="input-field col s12 m6">
 				        					<i class="material-icons prefix">wc</i>
-						    				<select class="icons" name="jk">
+						    				<select class="icons" name="jk" required>
 						      					<option value="" disabled selected>Jenis Kelamin</option>
 						      					<option value="p" data-icon="img/male.jpg" class="left circle">Pria</option>
 						      					<option value="w" data-icon="img/female.jpg" class="left circle">Wanita</option>
@@ -135,12 +135,12 @@
 				      				<div class="row">
 				      					<div class="input-field col s12 m6">
 				          					<i class="material-icons prefix">accessibility</i>
-				          					<input id="icon_telephone" type="text" name="tinggi" class="validate">
+				          					<input id="icon_telephone" type="text" name="tinggi" class="validate" required>
 				          					<label for="icon_telephone white-text">Tinggi Badan</label>
 				        				</div>
 				        				<div class="input-field col s12 m6">
 				          					<i class="material-icons prefix">poll</i>
-				          					<input id="icon_telephone" type="text" name="berat" class="validate">
+				          					<input id="icon_telephone" type="text" name="berat" class="validate" required>
 				          					<label for="icon_telephone white-text">Berat Badan</label>
 				        				</div>
 				      				</div>
